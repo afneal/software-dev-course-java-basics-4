@@ -25,8 +25,9 @@ public class CollectionExercises {
         // Create and return an array of strings with the given size (from the parameter)
         // Use a loop to set every element to "apple"
         // Replace the line below with your implementation
-        String[] fruitSize = new String[3];
-        for (int i=0; i<fruitSize.length; i++) {
+        String[] fruitSize = new String[size];
+
+        for (int i=0; i<size; i++) {
             fruitSize[i] = "apple";
         }
         return fruitSize;
@@ -58,13 +59,12 @@ public class CollectionExercises {
     public ArrayList<String> makeListOfThreeFruits(String fruit1, String fruit2, String fruit3) {
         // Create and return an ArrayList of strings with the given values
         // Replace the line below with your implementation
-        ArrayList<String> threeFruitsList = new ArrayList<>();
+        ArrayList<String> fruitList = new ArrayList<>();
+        fruitList.add(fruit1);
+        fruitList.add(fruit2);
+        fruitList.add(fruit3);
 
-        for (int i=0; i<3; i++) {
-            threeFruitsList.add(makeFruitList().get(i));
-
-        }
-        return threeFruitsList;
+        return fruitList;
     }
 
     public HashMap<String, String> makeFruitMap() {
@@ -91,9 +91,9 @@ public class CollectionExercises {
         // Create and return a HashSet of strings with the given values
         // Replace the line below with your implementation
         HashSet<String> fruitSet = new HashSet<>();
-        for (int i=0; i<3; i++) {
-            fruitSet.add(makeFruitList().get(i));
-        }
+        fruitSet.add(fruit1);
+        fruitSet.add(fruit2);
+        fruitSet.add(fruit3);
         return fruitSet;
     }
 }
